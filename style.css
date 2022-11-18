@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* poppins google font u import ettik */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* kök dizine degisken atayarak renk verdik. red yapip farki görebilirsin. */
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+body {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/759/428/990/uplifting-rays-of-sunshine-wallpaper-preview.jpg");
+}
+
+body:hover {
+  backdrop-filter: blur(0px);
+}
+.container {
+  padding: 20px 70px;
+  color: #fff;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search1 {
+  background-color: rgba(134, 134, 139, 0.5);
+  border: 2px solid var(--primary-color);
+  width: 450px;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: white;
+  font-family: inherit;
+  text-transform: capitalize;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  direction: ltr;
+}
+
+/* bg a degisken atayarak renk verdik */
+.search1:focus {
+  outline: none;
+  width: 500px;
+  background-color: var(--primary-color);
+}
+.search1::placeholder {
+  color: #a7a7ac;
+}
+.current-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.date-container {
+  width: 140px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.date-container .time {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+}
+
+.date-container .date {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.current-info .others {
+  display: flex;
+  flex-direction: column;
+  background: rgba(24, 24, 27, 0.681);
+  row-gap: 5px;
+  text-align: center;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  border: 1px solid rgba(238, 238, 238, 0.681);
+}
+
+.current-info .others .weather-item {
+  display: flex;
+  justify-content: space-between;
+}
+.current-info .others .weather-item div {
+  margin: 0 1rem;
+  margin-bottom: 0.3rem;
+}
+.current-info .others .weather-item h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+.map_para {
+  font-size: 25px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.future-forecast {
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+
+.future-forecast .today {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(238, 238, 238, 0.681);
+  border-radius: 10px;
+  padding: 15px;
+  padding-right: 50px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* bg a degisken atayarak renk verdik */
+.future-forecast .today .day {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.other {
+  width: fit-content;
+  align-items: flex-start;
+  justify-content: center;
+}
+.future-forecast .today .temp {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.future-forecast .weather-forecast {
+  display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border: 1px solid rgba(238, 238, 238, 0.681);
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.weather-forecast .weather-forecast-item .day {
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 10px;
+}
